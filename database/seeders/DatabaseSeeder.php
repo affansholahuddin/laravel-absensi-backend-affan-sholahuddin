@@ -21,6 +21,8 @@ class DatabaseSeeder extends Seeder
             'name' => 'Udin',
             'email' => 'udin@ash.com',
             'password' => Hash::make('12345678'),
+            'position' => 'Admin',
+            'department' => 'Technology',
         ]);
 
         //data dummy for company
@@ -37,6 +39,7 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             AttendanceSeeder::class,
+            PermissionSeeder::class,
         ]);
     }
 }
