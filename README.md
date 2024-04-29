@@ -6,20 +6,20 @@ Presence BackEnd merupakan aplikasi BackEnd untuk sistem presensi karyawan yang 
 
 ## 📣 Requirements
 
--   PHP >= 8.3
+-   PHP >= 8.2
 -   Composer
--   MySQL or a database compatible with Laravel
+-   MySQL atau database lain yang compatible dengan Laravel 11
 
 ## 🏃 Menjalankan Web secara Offline
 
 Untuk menjalankan web ini secara offline, berikut langkah-langkahnya:
 
 1. <b>Cloning</b><br>
-   Clone repository ke perangkat lokal.
+   Clone repo ke perangkat lokal.
    `git clone https://github.com/affansholahuddin/presence_be.git`
 
 2. <b>Buka Project</b><br>
-   Masuk ke Direktori dan jalankan Visual Studio Code atau sejenisnya
+   Masuk ke Direktori dan jalankan Visual Studio Code atau sejenisnya.
    `cd presence_be`
 
     `code .`
@@ -29,7 +29,7 @@ Untuk menjalankan web ini secara offline, berikut langkah-langkahnya:
    `composer install`
 
 4. <b>Konfigurasi Environment</b><br>
-   Ubah file `.env.example` menjadi `.env`,
+   Ubah file `.env.example` menjadi `.env`.
    `cp .env.example .env`
 
     Kemudian ubah isi file `.env` dan sesuaikan dengan konfigurasi database di perangkat lokal, seperti:
