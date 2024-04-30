@@ -16,21 +16,25 @@ Untuk menjalankan web ini secara offline, berikut langkah-langkahnya:
 
 1. <b>Cloning</b><br>
    Clone repo ke perangkat lokal.
-   `git clone https://github.com/affansholahuddin/presence_be.git`
+
+    `git clone https://github.com/affansholahuddin/presence_be.git`
 
 2. <b>Buka Project</b><br>
    Masuk ke Direktori dan jalankan Visual Studio Code atau sejenisnya.
-   `cd presence_be`
+
+    `cd presence_be`
 
     `code .`
 
 3. <b>Install Dependency</b><br>
    Jalankan Composer untuk menginstall dependensi yang diperlukan oleh Laravel 11.
-   `composer install`
+
+    `composer install`
 
 4. <b>Konfigurasi Environment</b><br>
    Ubah file `.env.example` menjadi `.env`.
-   `cp .env.example .env`
+
+    `cp .env.example .env`
 
     Kemudian ubah isi file `.env` dan sesuaikan dengan konfigurasi database di perangkat lokal, seperti:
 
@@ -45,35 +49,42 @@ Untuk menjalankan web ini secara offline, berikut langkah-langkahnya:
 
 5. <b>Generate Key</b><br>
    Generate key untuk mengamankan aplikasi.
-   `php artisan key:generate`
+
+    `php artisan key:generate`
 
 6. <b>Link Storage</b><br>
    Link folder storage agar dapat mengakses file di publik.
-   `php artisan storage:link`
+
+    `php artisan storage:link`
 
 7. <b>Database Migrations</b>
    Jalankan migrasi untuk setup database.
-   `php artisan migrate`
+
+    `php artisan migrate`
 
 8. <b>Jalankan Project</b><br>
    Untuk menjalankan project secara offline, gunakan perintah berikut:
-   `php artisan serve`
+
+    `php artisan serve`
 
     Server akan berjalan pada alamat `http://localhost:8000`
 
     \* Jika ingin mengubah port, gunakan perintah:
+
     `php artisan serve --port=8005`
 
 9. <b>Cek Project pada browser</b><br>
    Buka browser dan buka alamat sesuai port yang digunakan
-   `http://localhost:8000`
+
+    `http://localhost:8000`
 
 ## 📬 Update Konten Terbaru
 
 Untuk mengunduh repo terbaru ke repo lokal, berikut langkahnya:
 
 1. <b>Pulling</b><br>
-   `$ git pull origin master`
+
+    `git pull origin master`
 
 ## 🧱 Features
 
