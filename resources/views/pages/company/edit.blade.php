@@ -12,16 +12,16 @@
     <div class="main-content">
         <section class="section">
             <div class="section-header">
-                <h1>Edit Profil Perusahaan</h1>
+                <h1>Edit Company Profile</h1>
                 <div class="section-header-breadcrumb">
                     <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
-                    <div class="breadcrumb-item">Edit Profil Perusahaan</div>
+                    <div class="breadcrumb-item">Edit Company Profile</div>
                 </div>
             </div>
             <div class="section-body">
-                <h2 class="section-title">Edit Profil Perusahaan</h2>
+                <h2 class="section-title">Edit Company Profile</h2>
                 <p class="section-lead">
-                    Perbarui informasi tentang perusahaan Anda di halaman ini.
+                    Update your company profile in this page.
                 </p>
 
                 <div class="row mt-sm-4">
@@ -33,19 +33,19 @@
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="form-group col-md-6 col-12">
-                                            <label>Nama Perusahaan</label>
+                                            <label>Company Name</label>
                                             <input type="text" name="name" class="form-control"
                                                 value="{{ $company->name }}">
                                         </div>
                                         <div class="form-group col-md-6 col-12">
-                                            <label>Alamat Perusahaan</label>
+                                            <label>Address</label>
                                             <input type="text" name="address" class="form-control"
                                                 value="{{ $company->address }}">
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="form-group col-md-6 col-12">
-                                            <label>Email Perusahaan</label>
+                                            <label>Email</label>
                                             <input type="email" name="email" class="form-control"
                                                 value="{{ $company->email }}">
                                         </div>
@@ -54,7 +54,7 @@
                                             <input type="tel" name="phone" class="form-control" value="{{ $company->phone }}">
                                         </div> --}}
                                         <div class="form-group col-md-6 col-12">
-                                            <label>Radius KM</label>
+                                            <label>Radius Km</label>
                                             <input type="number" step="0.01" name="radius_km" class="form-control"
                                                 value="{{ $company->radius_km }}">
                                         </div>
@@ -74,19 +74,19 @@
                                     <div class="row">
 
                                         <div class="form-group col-md-6 col-12">
-                                            <label>Waktu Masuk</label>
+                                            <label>Time in</label>
                                             <input type="time" name="time_in" class="form-control"
                                                 value="{{ $company->time_in }}">
                                         </div>
                                         <div class="form-group col-md-6 col-12">
-                                            <label>Waktu Pulang</label>
+                                            <label>Time out</label>
                                             <input type="time" name="time_out" class="form-control"
                                                 value="{{ $company->time_out }}">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card-footer text-right">
-                                    <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
+                                    <button type="submit" class="btn btn-primary">Save Changes</button>
                                 </div>
                             </form>
                         </div>

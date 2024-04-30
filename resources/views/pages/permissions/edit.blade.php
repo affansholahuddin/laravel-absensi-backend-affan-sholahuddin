@@ -21,7 +21,7 @@
             <div class="section-body">
                 <h2 class="section-title">Edit Permission</h2>
                 <p class="section-lead">
-                    Perbarui informasi tentang izin karyawan.
+                    Update information about employee permissions.
                 </p>
 
                 <div class="row mt-sm-4">
@@ -33,11 +33,11 @@
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="form-group col-md-6 col-12">
-                                            <label>Nama Karyawan</label>
+                                            <label>Employee name</label>
                                             <p>{{ $permission->user->name }}</p>
                                         </div>
                                         <div class="form-group col-md-6 col-12">
-                                            <label>Telpon Karyawan</label>
+                                            <label>Phone</label>
                                             <p>{{ $permission->user->phone }}</p>
                                         </div>
                                     </div>
@@ -64,13 +64,13 @@
                                     </div>
                                     <div class="row">
                                         <div class="form-group col-md-6 col-12">
-                                            <label>Bukti Dukung</label>
+                                            <label>Attachment</label>
                                             <p>
                                                 @if ($permission->image)
                                                     <img src="{{ asset('storage/permission/' . $permission->image) }}"
                                                         alt="Bukti Dukung" style="max-width: 100%; height: auto;">
                                                 @else
-                                                    Tidak ada bukti dukung
+                                                    No attachment
                                                 @endif
                                             </p>
                                         </div>
@@ -78,15 +78,15 @@
                                             <label>Is Approval</label>
                                             <select name="is_approved" class="form-control" style="height: 40px;">
                                                 <option value="1" {{ $permission->is_approval ? 'selected' : '' }}>
-                                                    Disetujui</option>
+                                                    Approved</option>
                                                 <option value="0" {{ !$permission->is_approval ? 'selected' : '' }}>
-                                                    Tidak Disetujui</option>
+                                                    Not Approved</option>
                                             </select>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card-footer text-right">
-                                    <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
+                                    <button type="submit" class="btn btn-primary">Save Changes</button>
                                 </div>
                             </form>
                         </div>

@@ -12,16 +12,16 @@
     <div class="main-content">
         <section class="section">
             <div class="section-header">
-                <h1>Profile Perusahaan</h1>
+                <h1>Company Profile</h1>
                 <div class="section-header-breadcrumb">
                     <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
-                    <div class="breadcrumb-item">Profile Perusahaan</div>
+                    <div class="breadcrumb-item">Company Profile</div>
                 </div>
             </div>
             <div class="section-body">
-                <h2 class="section-title">Profil Perusahaan</h2>
+                <h2 class="section-title">Company Profile</h2>
                 <p class="section-lead">
-                    Informasi tentang perusahaan Anda.
+                    Information about your company.
                 </p>
 
                 <div class="row mt-sm-4">
@@ -30,21 +30,21 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="form-group col-md-6 col-12">
-                                        <label>Nama Perusahaan</label>
+                                        <label>Company Name</label>
                                         <p>{{ $company->name }}</p>
                                     </div>
                                     <div class="form-group col-md-6 col-12">
-                                        <label>Alamat Perusahaan</label>
+                                        <label>Address</label>
                                         <p>{{ $company->address }}</p>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-group col-md-6 col-12">
-                                        <label>Email Perusahaan</label>
+                                        <label>Email </label>
                                         <p>{{ $company->email }}</p>
                                     </div>
                                     <div class="form-group col-md-6 col-12">
-                                        <label>Radius KM</label>
+                                        <label>Radius Km</label>
                                         <p>{{ $company->radius_km }} KM</p>
                                     </div>
                                 </div>
@@ -61,18 +61,18 @@
                                 <div class="row">
 
                                     <div class="form-group col-md-6 col-12">
-                                        <label>Waktu Masuk</label>
+                                        <label>Time in</label>
                                         <p>{{ $company->time_in }}</p>
                                     </div>
                                     <div class="form-group col-md-6 col-12">
-                                        <label>Waktu Pulang</label>
+                                        <label>Time out</label>
                                         <p>{{ $company->time_out }}</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="card-footer text-right">
-                                <a href="{{ route('companies.edit', $company->id) }}" class="btn btn-primary">Edit Profil
-                                    Perusahaan</a>
+                                <a href="{{ route('companies.edit', $company->id) }}" class="btn btn-primary">Edit Company
+                                    Profile</a>
                             </div>
                         </div>
                     </div>

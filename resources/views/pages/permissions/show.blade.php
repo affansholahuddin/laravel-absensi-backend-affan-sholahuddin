@@ -21,7 +21,7 @@
             <div class="section-body">
                 <h2 class="section-title">Permission Detail</h2>
                 <p class="section-lead">
-                    Informasi tentang detail izin karyawan.
+                    Information about employee permission details.
                 </p>
 
                 <div class="row mt-sm-4">
@@ -30,11 +30,11 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="form-group col-md-6 col-12">
-                                        <label>Nama Karyawan</label>
+                                        <label>Employee name</label>
                                         <p>{{ $permission->user->name }}</p>
                                     </div>
                                     <div class="form-group col-md-6 col-12">
-                                        <label>Telpon Karyawan</label>
+                                        <label>Phone</label>
                                         <p>{{ $permission->user->phone }}</p>
                                     </div>
 
@@ -61,7 +61,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="form-group col-md-6 col-12">
-                                        <label>Bukti Dukung</label>
+                                        <label>Attachment</label>
                                         @if ($permission->image)
                                             <!-- Jika image tersedia, tampilkan gambar -->
                                             <div>
@@ -70,7 +70,7 @@
                                             </div>
                                         @else
                                             <!-- Jika image kosong, tampilkan teks -->
-                                            <p>Tidak ada bukti dukung</p>
+                                            <p>No attachment</p>
                                         @endif
                                     </div>
                                     <div class="form-group col-md-6 col-12">
